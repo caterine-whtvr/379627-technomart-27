@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ekaterina Kuzmina](https://up.htmlacademy.ru/htmlcss/27/user/379627).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
