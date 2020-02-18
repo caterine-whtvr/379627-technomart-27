@@ -1,13 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-  
-    font-family: 'Cuprum', "PT Sans", sans-serif;
-    font-size: 17px;
-    line-height: 17px;
+    font-family: "Cuprum", "PT Sans", Arial, "Arial Narrow", Tahoma, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
     font-weight: 400;
     color: #000000;
-    
     background-color: #ffffff;
 }
 
@@ -26,12 +24,12 @@ a {
 .button {
     font-size: 14px;
     line-height: 18px;
-  
+
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
     text-transform: uppercase;
-  
+    
     background-color: #ee3643;
     border: none;
 }
@@ -39,16 +37,21 @@ a {
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: #ca2c37;
+    background-color: #ca2c37;
 }
 
 .main-header {
     background-color: #f4f7f9;
 }
 
-.header-info, 
+.header-info,
 .main-navigation {
     background-color: #293449;
+}
+
+.main-navigation {
+    font-size: 17px;
+    line-height: 17px;
 }
 
 .header-tool-item {
@@ -61,7 +64,7 @@ a {
     list-style: none;
 }
 
-.header-tool-item, 
+.header-tool-item,
 .site-navigation-item {
     color: #ffffff;
 }
@@ -105,16 +108,14 @@ a {
 
 .search-field {
     border-style: none;
-    background-color: #293449;   
+    background-color: #293449;
 }
 
 .shop-title {
-    font-size: 16px;   
+    font-size: 16px;
     line-height: 23px;
     font-style: italic;
-
     text-align: left;
-
     color: #ee3643;
 }
 
@@ -125,23 +126,19 @@ a {
 .shop-phone-link {
     font-size: 21px;
     line-height: 21px;
-
     color: #ee3643;
 }
 
 .shop-address {
     font-size: 14px;
     line-height: 24px;
-
     text-align: center;
-
     color: #32425c;
 }
 
 .user-navigation-item {
     font-size: 21px;
     line-height: 21px;
-
     background-color: #ffffff;
 }
 
@@ -159,11 +156,9 @@ a {
 .button-green {
     font-size: 17px;
     line-height: 18px;
-  
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
-  
     background-color: #63a63e;
     border: none;
 }
@@ -178,10 +173,11 @@ a {
     background-color: #518534;
 }
 
+
 /* стили для главной страницы */
 
 .company-info p {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -189,14 +185,14 @@ a {
 .contractors {
     font-size: 18px;
     line-height: 20px;
-
     list-style: none;
 }
+
 
 /* стили для страницы каталога */
 
 .user-info {
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 .user-login-link {
@@ -216,7 +212,6 @@ a {
 .login-navigation-link {
     font-size: 16px;
     line-height: 18px;
-
     color: #32425c;
     text-decoration: underline;
 }
@@ -231,7 +226,7 @@ a {
 }
 
 .catalog-container {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -244,11 +239,10 @@ a {
 }
 
 .page-title {
-    font-family: 'Cuprum', sans-serif;
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 30px;
     line-height: 30px;
-
-    color: #32425c;   
+    color: #32425c;
     background-color: #f2f6f8;
 }
 
@@ -262,26 +256,24 @@ a {
     line-height: 30px;
 }
 
-.brand-filter, 
+.brand-filter,
 .power-filter {
     list-style: none;
     font-size: 15px;
     line-height: 20px;
 }
 
-.filter-input:disabled + label {
+.filter-input:disabled+label {
     color: rgba(0, 0, 0, 0.4);
 }
 
 .button-next {
     font-size: 13px;
     line-height: 18px;
-  
     text-align: center;
     text-transform: uppercase;
     color: #000000;
     vertical-align: middle;
-  
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
 }
@@ -304,7 +296,6 @@ a {
 .item-link {
     font-size: 18px;
     line-height: 20px;
-
     text-transform: none;
     color: #000000;
 }
@@ -312,7 +303,6 @@ a {
 .old-price {
     font-size: 17px;
     line-height: 18px;
-
     text-decoration: line-through;
     color: #999999;
 }
@@ -320,7 +310,6 @@ a {
 .button-buy {
     font-size: 14px;
     line-height: 18px;
-
     color: #ffffff;
     background-color: #63a63e;
 }
@@ -328,7 +317,6 @@ a {
 .button-bookmark {
     font-size: 14px;
     line-height: 18px;
-
     color: #32425c;
     background-color: #ffffff;
     border: 3px solid #63a63e;
@@ -341,9 +329,7 @@ a {
 .pagination-item a {
     font-size: 13px;
     line-height: 18px;
-    
     color: #000000;
-  
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
 }
@@ -360,15 +346,15 @@ a {
 }
 
 .pagination-item-current a {
-    color: #ffffff; 
+    color: #ffffff;
     background-color: #ee3643;
     border: 1px solid #ee3643;
 }
 
-.pagination-item-current a:hover, 
+.pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
-    color: #ffffff; 
+    color: #ffffff;
     background-color: #ee3643;
     border: 1px solid #ee3643;
 }
@@ -379,10 +365,9 @@ a {
 }
 
 .page-subtitle {
-    font-family: 'Cuprum', sans-serif;
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 30px;
     line-height: 30px;
-
     color: #000000;
 }
 
@@ -392,13 +377,13 @@ a {
     text-transform: none;
 }
 
+
 /* футер */
 
 .main-footer {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
-
     background-color: #32425c;
 }
 
@@ -430,7 +415,7 @@ a {
     text-decoration: underline;
 }
 
-.footer-site-link:active{
+.footer-site-link:active {
     color: rgba(241, 245, 247, 0.5);
 }
 
@@ -442,20 +427,19 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
-
     background-color: #293449;
 }
-  
+
 .footer-contacts ul {
     text-align: center;
     list-style: none;
 }
-  
+
 .social-button {
     color: #ffffff;
     background-color: #212a3a;
 }
-  
+
 .social-button:hover,
 .social-button:focus,
 .social-button:active {
@@ -481,12 +465,12 @@ a {
     color: #ee3643;
 }
 
+
 /* стили для форм обратной связи */
 
 .feedback-form {
     font-size: 18px;
     line-height: 18px;
-
     color: #000000;
     background-color: #ffffff;
     border-top: 7px solid #ee3643;
@@ -502,7 +486,6 @@ a {
     font-size: 13px;
     line-height: 18px;
     color: #999999;
-
     background-color: #ffffff;
     border: 2px solid #d7dcde;
 }
@@ -514,7 +497,7 @@ a {
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  border-color: #ee3643;
+    border-color: #ee3643;
 }
 
 .add-to-cart {
@@ -523,10 +506,9 @@ a {
 }
 
 .form-title {
-    font-family: 'Cuprum', sans-serif;
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 30px;
     line-height: 30px;
-
     text-align: center;
     color: #000000;
 }
@@ -538,12 +520,10 @@ a {
 .button-ghost {
     font-size: 14px;
     line-height: 18px;
-  
     text-align: center;
     color: #000000;
     vertical-align: middle;
     text-transform: uppercase;
-  
     background-color: #ffffff;
     border: none;
 }
