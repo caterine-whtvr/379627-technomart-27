@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Cuprum", "PT Sans", Arial, "Arial Narrow", Tahoma, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -22,6 +22,7 @@ a {
 }
 
 .button {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 14px;
     line-height: 18px;
 
@@ -41,6 +42,7 @@ a {
 }
 
 .main-header {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     background-color: #f4f7f9;
 }
 
@@ -157,6 +159,7 @@ a {
     font-size: 17px;
     line-height: 18px;
     text-align: center;
+
     color: #ffffff;
     vertical-align: middle;
     background-color: #63a63e;
@@ -177,7 +180,6 @@ a {
 /* стили для главной страницы */
 
 .company-info p {
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -185,6 +187,7 @@ a {
 .contractors {
     font-size: 18px;
     line-height: 20px;
+
     list-style: none;
 }
 
@@ -226,7 +229,6 @@ a {
 }
 
 .catalog-container {
-    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -242,8 +244,19 @@ a {
     font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 30px;
     line-height: 30px;
+
+    text-transform: uppercase;
     color: #32425c;
     background-color: #f2f6f8;
+}
+
+.page-subtitle {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
+    font-size: 30px;
+
+    text-transform: uppercase;
+    line-height: 30px;
+    color: #000000;
 }
 
 .filter fieldset {
@@ -308,15 +321,19 @@ a {
 }
 
 .button-buy {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 14px;
     line-height: 18px;
+
     color: #ffffff;
     background-color: #63a63e;
 }
 
 .button-bookmark {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 14px;
     line-height: 18px;
+
     color: #32425c;
     background-color: #ffffff;
     border: 3px solid #63a63e;
@@ -364,13 +381,6 @@ a {
     background-color: #f4f7f9;
 }
 
-.page-subtitle {
-    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    color: #000000;
-}
-
 .about-product p {
     font-size: 13px;
     line-height: 24px;
@@ -381,8 +391,10 @@ a {
 /* футер */
 
 .main-footer {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 18px;
     line-height: 24px;
+
     color: #ffffff;
     background-color: #32425c;
 }
@@ -426,6 +438,7 @@ a {
 .footer-contacts {
     font-size: 16px;
     line-height: 18px;
+
     color: #ffffff;
     background-color: #293449;
 }
@@ -469,8 +482,10 @@ a {
 /* стили для форм обратной связи */
 
 .feedback-form {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 18px;
     line-height: 18px;
+
     color: #000000;
     background-color: #ffffff;
     border-top: 7px solid #ee3643;
@@ -483,8 +498,10 @@ a {
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
+
     color: #999999;
     background-color: #ffffff;
     border: 2px solid #d7dcde;
@@ -509,8 +526,10 @@ a {
     font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 30px;
     line-height: 30px;
+
     text-align: center;
     color: #000000;
+    background: url(/img/icon-mark.svg) no-repeat;
 }
 
 .button-close {
@@ -518,12 +537,15 @@ a {
 }
 
 .button-ghost {
+    font-family: "Cuprum", "Arial Narrow", Tahoma, sans-serif;
     font-size: 14px;
     line-height: 18px;
+
     text-align: center;
     color: #000000;
     vertical-align: middle;
     text-transform: uppercase;
+
     background-color: #ffffff;
     border: none;
 }
