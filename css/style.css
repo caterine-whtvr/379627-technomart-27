@@ -47,9 +47,6 @@ a {
 /* ______стили header общие ______*/
 
 .main-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 19px;
   min-height: 320px;
 
@@ -65,7 +62,6 @@ a {
 
 .header-info-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 940px;
   height: 42px;
@@ -74,9 +70,7 @@ a {
 
 .header-logo-link {
   position: relative;
-}
 
-.header-logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,13 +81,18 @@ a {
   background-color: #ee3643;
 }
 
-.header-logo-wrapper:hover, 
-.header-logo-wrapper:focus {
+.header-logo-link:hover, 
+.header-logo-link:focus {
   background-color: #ca2c37;
 }
 
-.header-logo-wrapper:active {
+.header-logo-link:active {
   background-color: #ba2732;
+}
+
+.search-form {
+  width: 270px;
+  min-height: 42px;
 }
 
 .search-field-wrapper {
@@ -101,8 +100,6 @@ a {
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
-  width: 270px;
-  min-height: 42px;
   margin: 0;
   padding: 0;
 }
@@ -121,7 +118,7 @@ a {
 .search-field {
   width: 100%;
   margin: 0;
-  padding: 14px 14px 14px 0;
+  padding: 12px 14px 12px 0;
 
   font-size: 17px;
   line-height: 18px;
@@ -136,13 +133,15 @@ a {
 }
 
 .header-menu-item {
+  box-sizing: border-box;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   margin: 0;
-  width: 150px;
-  height: 42px;
+  min-width: 150px;
+  padding: 12px 18px 12px 18px;
 
   font-size: 17px;
   line-height: 18px;
@@ -158,6 +157,8 @@ a {
 }
 
 .button-green {
+  padding: 10px 20px;
+
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -210,26 +211,35 @@ a {
   flex-direction: column;
 }
 
-.shop-phone {
+/* .shop-phone {
   display: flex;
   width: 270px;
-  padding: 9px 0 11px 10px;
   margin: 0;
 
   box-sizing: border-box;
   
   border: solid 3px #ffffff;
-}
+} */
 
 .shop-phone-link {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  margin: 0;
+  padding: 9px 0 11px 10px;
+
+  box-sizing: border-box;
+
   font-size: 21px;
   line-height: 1;
   letter-spacing: 0.2px;
   color: #ee3643;
-}
+  border: solid 3px #ffffff;
 
-.shop-phone-link svg {
-  margin-right: 40px;
+  background-image: url(/img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: 14px 50%;
 }
 
 .shop-address {
@@ -280,6 +290,7 @@ a {
 
 .site-navigation {
   display: flex;
+  align-items: center;
   width: 940px;
   min-height: 60px;
   margin: 0 auto;
@@ -291,22 +302,19 @@ a {
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
-.site-navigation-wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
 .site-navigation-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0 55px 0 52px;
+  padding: 0 17px 0 17px;
 
   list-style: none;
+}
+
+.site-navigation-item {
+  padding: 21px 31px 20px;
 }
 
 .header-menu-item,
@@ -496,9 +504,11 @@ a {
   list-style: none;
 }
 
-.breadcrumbs-item {
+.breadcrumbs li {
   margin-right: 40px;
+}
 
+.breadcrumbs-item {
   color: #000000;
 }
 
@@ -571,7 +581,8 @@ a {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 52px 0;
+  width: 700px;
+  margin: 0 0 52px auto;
   padding: 0;
 
   list-style: none;
@@ -580,7 +591,7 @@ a {
 .catalog-item {
   width: 218px;
   min-height: 318px;
-  margin: 0 21px 21px 0;
+  margin: 0 20px 20px 0;
 
   text-align: center;
   border: 1px solid #e5e5e5;
@@ -707,9 +718,7 @@ a {
 
 .footer-logo-link {
   position: relative;
-}
 
-.footer-logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -721,12 +730,12 @@ a {
   background-color: #ee3643;
 }
 
-.footer-logo-wrapper:hover, 
-.footer-logo-wrapper:focus {
+.footer-logo-link:hover, 
+.footer-logo-link:focus {
   background-color: #ca2c37;
 }
 
-.footer-logo-wrapper:active {
+.footer-logo-link:active {
   background-color: #ba2732;
 }
 
@@ -925,7 +934,8 @@ a {
   line-height: 30px;
   text-align: center;
   color: #000000;
-  background: url(/img/icon-mark.svg) no-repeat;
+  background-image: url(/img/icon-mark.svg);
+  background-repeat: no-repeat;
 }
 
 .button-close {
