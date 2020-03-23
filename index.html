@@ -11,6 +11,7 @@
     rel="stylesheet">
 </head>
 
+
 <body>
   <header class="main-header">
     <div class="header-info">
@@ -21,7 +22,7 @@
         <form class="search-form" action="#" method="post">
           <div class="search-field-wrapper">
             <input class="search-field" type="search" id="search-field" placeholder="Поиск:">
-            <label for="search-field">
+            <label class="search-field-label" for="search-field">
               <svg aria-label="Поле поиска" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewbox="0 0 17 17">
                 <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
               </svg>
@@ -31,15 +32,15 @@
         </form>
         <div class="header-menu">
           <a class="header-menu-item header-menu-link" href="#">
-            <svg class="header-menu-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewbox="0 0 14 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewbox="0 0 14 16">
               <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
             </svg>Закладки: 0
           </a>
           <a class="header-menu-item header-menu-link" href="#">
-            <svg class="header-menu-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
-              <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
-              <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
-              <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15" fill="#ffffff">
+              <circle cx="4.5" cy="13.5" r="1.5" />
+              <circle cx="12.5" cy="13.5" r="1.5" />
+              <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
             </svg>Корзина: 0
           </a>
           <a class="header-menu-item button-green" href="#">Оформить заказ</a>
@@ -58,9 +59,9 @@
         <ul class="user-navigation">
           <li>
             <a class="user-navigation-item" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17">
-                <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
-                <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17" fill="#c5c5c5">
+                <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
+                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
               </svg>Войти
             </a>
           </li>
@@ -82,10 +83,9 @@
   </header>
 
 
-
   <main class="container">
-    <div class="container-wrapper">
 
+    <div class="container-wrapper">
       <ul class="promo">
         <li class="promo-item promo-item-material">
           <p class="promo-item-title">Материалы</p>
@@ -100,9 +100,22 @@
           <a class="promo-item-button" href="#">Для стройки</a>
         </li>
         <li class="promo-item slider-item">
-          <p class="slider-item-title">Дрели</p>
-          <span class="slider-item-text">Соседям на радость!</span>
-          <a class="button button-promo" href="#">Открыть каталог</a>
+          <button class="button-next-left" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="button-next-right" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+          <div class="slider-item-drill">
+            <p class="slider-item-title">Дрели</p>
+            <span class="slider-item-text">Соседям на радость!</span>
+            <a class="button button-promo" href="#">Открыть каталог</a>
+          </div>
+          <div class="slider-item-perforator">
+            <p class="slider-item-title">Перфораторы</p>
+            <span class="slider-item-text">Настоящие мужские игрушки</span>
+            <a class="button button-promo" href="#">Открыть каталог</a>
+          </div>
         </li>
         <li class="promo-item promo-item-sale">
           <p class="promo-item-title">Скидки 50%</p>
@@ -178,12 +191,12 @@
                 </li>
                 <li><a class="button-bookmark" href="#">В закладки</a></li>
               </ul>
-                <img class="catalog-image" src="img/item-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" />
-                <h3 class="item-title">
-                    <a class="item-link" href="#">Перфоратор BOSCH BFG 6000</a>
-                </h3>
-                <p class="discount">30500 Р.</p>
-                <p class="price">25500 Р.</p>
+              <img class="catalog-image" src="img/item-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000" />
+              <h3 class="item-title">
+                <a class="item-link" href="#">Перфоратор BOSCH BFG 6000</a>
+              </h3>
+              <p class="discount">30500 Р.</p>
+              <p class="price">25500 Р.</p>
             </div>
           </li>
           <li class="catalog-item-popular">
@@ -201,16 +214,15 @@
                 </li>
                 <li><a class="button-bookmark" href="#">В закладки</a></li>
               </ul>
-                <img class="catalog-image" src="img/item-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" />
-                <h3 class="item-title">
-                    <a class="item-link" href="#">Перфоратор BOSCH BFG 2000</a>
-                </h3>
-                <p class="discount"></p>
-                <p class="price">12500 Р.</p>
+              <img class="catalog-image" src="img/item-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000" />
+              <h3 class="item-title">
+                <a class="item-link" href="#">Перфоратор BOSCH BFG 2000</a>
+              </h3>
+              <p class="discount"></p>
+              <p class="price">12500 Р.</p>
             </div>
           </li>
         </ul>
-
         <div class="popular-wrapper">
           <h2 class="page-title">Популярные производители:</h2>
           <a class="button button-popular" href="#">Все производители</a>
@@ -268,7 +280,7 @@
         </div>
         <div class="tabs-wrapper">
           <ul class="tabs">
-            <li><a class="tabs-link" href="#">Доставка</a></li>
+            <li><a class="tabs-link tabs-link-active" href="#">Доставка</a></li>
             <li><a class="tabs-link" href="#">Гарантия</a></li>
             <li><a class="tabs-link" href="#">Кредит</a></li>
           </ul>
@@ -323,6 +335,7 @@
     </div>
 
   </main>
+
 
   <footer class="main-footer">
     <div class="footer-navigation">
@@ -393,27 +406,31 @@
     </div>
   </footer>
 
-  <section class="modal-feedback">
+
+  <section class="modal modal-hidden">
     <h2 class="visually-hidden">Обратная связь</h2>
     <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-      <p>
-        <label for="username-login">Ваше имя:</label>
-        <input id="username-login" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="user-text">Текст письма:</label>
-        <textarea id="user-text" name="comment" placeholder="В свободной форме"></textarea>
-      </p>
-      <div class="button-wrap">
-        <button class="button" type="submit">Отправить</button>
+      <div class="form-data-wrapper">
+        <p class="input-item">
+          <label for="username-login">Ваше имя:</label>
+          <input id="username-login" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="input-item">
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="input-item">
+          <label for="user-text">Текст письма:</label>
+          <textarea id="user-text" name="comment" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <div class="button-wrapper">
+        <button class="button button-form" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="button-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 </body>
-
 </html>
