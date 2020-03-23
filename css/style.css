@@ -21,15 +21,6 @@ img {
   height: auto;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
-}
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -1245,6 +1236,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .price-controls input {
+  -moz-appearance: textfield;
+
   width: 75px;
   padding: 8px 11px;
   
@@ -1257,6 +1250,12 @@ input[type=number]::-webkit-outer-spin-button {
   border: none;
   border-radius: 3px;
   background-color: #f7f3ec;
+}
+
+.price-controls input::-webkit-inner-spin-button, 
+.price-controls input::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 .min-price::after {
