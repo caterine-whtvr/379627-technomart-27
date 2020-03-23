@@ -88,6 +88,7 @@
     <div class="container-wrapper">
       <ul class="promo">
         <li class="promo-item promo-item-material">
+          <div class="flag-promo flag-new">Новинка</div>
           <p class="promo-item-title">Материалы</p>
           <a class="promo-item-button" href="#">Hа любой вкус</a>
         </li>
@@ -99,23 +100,25 @@
           <p class="promo-item-title">Техника</p>
           <a class="promo-item-button" href="#">Для стройки</a>
         </li>
-        <li class="promo-item slider-item">
-          <button class="button-next-left" type="button">
+        <li class="promo-item slider">
+          <div class="slider-list">
+            <div class="slider-item slider-item-active slider-item-drill">
+              <p class="slider-item-title">Дрели</p>
+              <span class="slider-item-text">Соседям на радость!</span>
+              <a class="button button-promo" href="catalog.html">Открыть каталог</a>
+            </div>
+            <div class="slider-item slider-item-perforator">
+              <p class="slider-item-title">Перфораторы</p>
+              <span class="slider-item-text">Настоящие мужские игрушки</span>
+              <a class="button button-promo" href="catalog.html">Открыть каталог</a>
+            </div>
+          </div>
+          <button class="slider-control slider-control-left" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
-          <button class="button-next-right" type="button">
+          <button class="slider-control slider-control-right" type="button">
             <span class="visually-hidden">Вперед</span>
           </button>
-          <div class="slider-item-drill">
-            <p class="slider-item-title">Дрели</p>
-            <span class="slider-item-text">Соседям на радость!</span>
-            <a class="button button-promo" href="#">Открыть каталог</a>
-          </div>
-          <div class="slider-item-perforator">
-            <p class="slider-item-title">Перфораторы</p>
-            <span class="slider-item-text">Настоящие мужские игрушки</span>
-            <a class="button button-promo" href="#">Открыть каталог</a>
-          </div>
         </li>
         <li class="promo-item promo-item-sale">
           <p class="promo-item-title">Скидки 50%</p>
@@ -285,17 +288,17 @@
             <li><a class="tabs-link" href="#">Кредит</a></li>
           </ul>
           <ul class="tab-description">
-            <li>
+            <li class="tab-description-item tab-description-item-active">
               <p class="service-title">Доставка</p>
               <p class="service-description service-description-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
               <img class="image-service image-service-delivery" src="img/delivery.png" width="468" height="261" alt="Грузовик">
             </li>
-            <li>
+            <li class="tab-description-item">
               <p class="service-title">Гарантия</p>
               <p class="service-description service-description-guarantee">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы&nbsp;обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
               <img class="image-service image-service-guarantee" src="img/guarantee.png" width="389" height="283" alt="Знак гарантии">
             </li>
-            <li>
+            <li class="tab-description-item">
               <p class="service-title">Кредит</p>
               <p class="service-description service-description-credit">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <a class="button-credit" href="#">Отправить заявку</a>
@@ -323,12 +326,12 @@
           <h2 class="page-subtitle">Контакты</h2>
           <p class="info-description text-office">Вы можете забрать товар сами, заехав в наш офис:</p>
           <div class="map">
-            <a href="#" aria-label="Посмотреть местоположение компании на Google Maps">
+            <a href="https://www.google.ru/maps" aria-label="Посмотреть местоположение компании на Google Maps">
               <img src="img/map.jpg" width="300" height="158" alt="Офис компании Техномарт: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             </a>
           </div>
           <p>
-            <a class="button button-office" href="#">Заблудились? Напишите нам!</a>
+            <a class="button button-office" href="writeus.html">Заблудились? Напишите нам!</a>
           </p>
         </section>
       </div>
