@@ -1321,6 +1321,10 @@ img {
   user-select: none;
 }
 
+.filter-input:focus + label {
+  color: #000000;
+}
+
 .filter-input:disabled + label {
   color: rgba(0, 0, 0, 0.4);
 }
@@ -1352,12 +1356,14 @@ img {
   background-image: url(../img/checkbox-on.svg);
 }
 
-.filter-input-checkbox:hover + label::before {
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
   background-image: url(../img/checkbox-hover-off.svg);
   opacity: 1;
 }
 
-.filter-input-checkbox:hover + label::after {
+.filter-input-checkbox:hover + label::after,
+.filter-input-checkbox:focus + label::after  {
   background-image: url(../img/checkbox-hover-on.svg);
   opacity: 1;
 }
@@ -1399,12 +1405,14 @@ img {
   background-image: url(../img/radio-on.svg);
 }
 
-.filter-input-radio:hover + label::before {
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
   background-image: url(../img/radio-hover-off.svg);
   opacity: 1;
 }
 
-.filter-input-radio:hover + label::after {
+.filter-input-radio:hover + label::after,
+.filter-input-radio:focus + label::after {
   background-image: url(../img/radio-hover-on.svg);
   opacity: 1;
 }

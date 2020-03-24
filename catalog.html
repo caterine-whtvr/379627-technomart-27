@@ -176,11 +176,11 @@
               <legend>Питание:</legend>
               <ul class="power-filter">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery"  id="filter-battery">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery"  id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network" id="filter-network" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network" id="filter-network">
                   <label for="filter-network">Сетевые</label>
                 </li>
               </ul>
@@ -205,14 +205,14 @@
             </ul>
             <ul class="sort-buttons">
               <li>
-                <button aria-label="По возрастранию" class="sort-button sort-button-active" type="button">
+                <a aria-label="По возрастранию" class="sort-button sort-button-active" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
-                </button>
+                </a>
               </li>
               <li>
-                <button aria-label="По убыванию" class="sort-button" type="button">
+                <a aria-label="По убыванию" class="sort-button" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -522,4 +522,7 @@
     </button>
   </section>
 </body>
+
+<script src="js/script.js"></script>
+
 </html>
